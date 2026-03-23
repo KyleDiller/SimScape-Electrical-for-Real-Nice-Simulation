@@ -1,1 +1,8 @@
+/MATE contains my original files for the MATE technique of power system simulation.
+MATE is explained in the UBC paper by Marti et al.
 
+The MATE algorith is not used a lot but the folder contains many useful routines.
+/net contains routines to get the Native Simscape Electrical netlist
+/m also, including single-phase diagram but I find that /net works better.
+
+To Mathworks people: why not release the code to get this netlist, that would be fun and would avoid me week-ends to figure out fancy bugs in my code!
