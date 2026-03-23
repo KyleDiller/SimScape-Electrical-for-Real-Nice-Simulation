@@ -1,0 +1,20 @@
+ --> ForFPGA_pkg
+ForFPGA_tc --> ForFPGA_tc
+MATE_HDLsolver_myFirstCircuit/ForFPGA/Counter Free-Running/Increment Real World --> Increment_Real_World
+MATE_HDLsolver_myFirstCircuit/ForFPGA/Counter Free-Running/Wrap To Zero --> Wrap_To_Zero
+MATE_HDLsolver_myFirstCircuit/ForFPGA/Counter Free-Running --> Counter_Free_Running
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/Discrete Triangular-Waveform Generator/Set-Reset Flip-Flop/Discrete --> Discrete
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/Discrete Triangular-Waveform Generator/Set-Reset Flip-Flop --> Set_Reset_Flip_Flop
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/Discrete Triangular-Waveform Generator/nfp_convert_fix_16_En0_to_single --> nfp_convert_fix_16_En0_to_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/Discrete Triangular-Waveform Generator/nfp_convert_sfix_32_En0_to_single --> nfp_convert_sfix_32_En0_to_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/Discrete Triangular-Waveform Generator/nfp_div_single --> nfp_div_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/Discrete Triangular-Waveform Generator --> Discrete_Triangular_Waveform_Generator
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator/nfp_relop_single --> nfp_relop_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/PWM Generator --> PWM_Generator
+MATE_HDLsolver_myFirstCircuit/ForFPGA/Compare To Constant --> Compare_To_Constant
+MATE_HDLsolver_myFirstCircuit/ForFPGA/LC vectorized/nfp_uminus_single --> nfp_uminus_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/nfp_mul_single --> nfp_mul_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/LC vectorized/nfp_sub_single --> nfp_sub_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA/LC vectorized --> LC_vectorized
+MATE_HDLsolver_myFirstCircuit/ForFPGA/nfp_add_single --> nfp_add_single
+MATE_HDLsolver_myFirstCircuit/ForFPGA --> ForFPGA

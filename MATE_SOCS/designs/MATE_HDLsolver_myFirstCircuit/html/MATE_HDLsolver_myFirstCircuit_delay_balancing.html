@@ -1,0 +1,4672 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Delay Balancing Report for MATE_HDLsolver_myFirstCircuit
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdDelayBalancing'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+Delay Balancing Report for MATE_HDLsolver_myFirstCircuit
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Port
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Pipeline Latency
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Phase Delay
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+MATE_HDLsolver_myFirstCircuit/ForFPGA/user_out
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+MATE_HDLsolver_myFirstCircuit/ForFPGA/user_out_clk
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+MATE_HDLsolver_myFirstCircuit/ForFPGA/user_out_8sig
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+
+</table>
+<br /><br />Design delays are fully utilized to absorb latency introduced by optimizations and block implementations.<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br />Tables of blocks that introduce latency, design delays that absorb latency, and delay absorption blockers. To exclude specific delay block from being used for absorption, turn off block property 'AllowDelayDistribution'.<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3484')" name="code2model" class="code2model">
+Discrete
+Triangular-Waveform
+Generator
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3491')" name="code2model" class="code2model">
+Divide
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+17
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3495')" name="code2model" class="code2model">
+Relational
+Operator2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3489')" name="code2model" class="code2model">
+Data Type Conversion2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3490')" name="code2model" class="code2model">
+Data Type Conversion7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+<br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3499')" name="code2model" class="code2model">
+Unit Delay1_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1e-06
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3480')" name="code2model" class="code2model">
+PWM Generator
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3502')" name="code2model" class="code2model">
+Relational
+Operator
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3449')" name="code2model" class="code2model">
+LC vectorized
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3467')" name="code2model" class="code2model">
+Switch
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3468')" name="code2model" class="code2model">
+Switch4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3456')" name="code2model" class="code2model">
+Divide
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3455')" name="code2model" class="code2model">
+Add
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+<br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3472')" name="code2model" class="code2model">
+Unit Delay6_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1e-06
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3470')" name="code2model" class="code2model">
+Unit Delay1_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1e-06
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3471')" name="code2model" class="code2model">
+Unit Delay5_absorbed
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+1e-06
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3417')" name="code2model" class="code2model">
+ForFPGA
+</a>
+
+</h5>
+<table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Introduced
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3478')" name="code2model" class="code2model">
+mux
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3449')" name="code2model" class="code2model">
+LC vectorized
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+Dot Product
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3431')" name="code2model" class="code2model">
+mul_Dot Product_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+Dot Product1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3432')" name="code2model" class="code2model">
+mul_Dot Product1_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+Dot Product2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3439')" name="code2model" class="code2model">
+mul_Dot Product2_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+Dot Product3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3440')" name="code2model" class="code2model">
+mul_Dot Product3_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+Dot Product4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3441')" name="code2model" class="code2model">
+mul_Dot Product4_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+Dot Product5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3442')" name="code2model" class="code2model">
+mul_Dot Product5_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+Dot Product6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3443')" name="code2model" class="code2model">
+mul_Dot Product6_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+Dot Product7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3444')" name="code2model" class="code2model">
+mul_Dot Product7_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+Dot Product8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3445')" name="code2model" class="code2model">
+mul_Dot Product8_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+Dot Product9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3446')" name="code2model" class="code2model">
+mul_Dot Product9_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+Dot Product10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3433')" name="code2model" class="code2model">
+mul_Dot Product10_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+Dot Product11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3434')" name="code2model" class="code2model">
+mul_Dot Product11_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+Dot Product12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3435')" name="code2model" class="code2model">
+mul_Dot Product12_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+Dot Product13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3436')" name="code2model" class="code2model">
+mul_Dot Product13_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+Dot Product14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3437')" name="code2model" class="code2model">
+mul_Dot Product14_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_0
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_1
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+Dot Product15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_2
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_3
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_4
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_5
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_6
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_7
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_8
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_9
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_10
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_11
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_12
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_13
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_14
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+<a href="matlab:coder.internal.code2model('MATE_HDLsolver_myFirstCircuit:3438')" name="code2model" class="code2model">
+mul_Dot Product15_dotp_15
+</a>
+
+</td>
+<td align="left" valign="top" style="border-style: none">
+6.0241e-09
+</td>
+<td align="left" valign="top" style="border-style: none">
+6
+</td>
+
+</tr>
+
+</table>
+<br /><table width="100%" border="1">
+<tr style="background-color: #eeeeee">
+<th align="left" valign="top" style="border-style: none">
+<b>
+Delay Block
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Sample Time
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Latency Absorbed
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Remaining Delays
+</b>
+
+</th>
+<th align="left" valign="top" style="border-style: none">
+<b>
+Unabsorbed Latency (total/non-absorbable)
+</b>
+
+</th>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+MATE_HDLsolver_myFirstCircuit/ForFPGA/Delay_absorbed
+</td>
+<td align="left" valign="top" style="border-style: none">
+1e-06
+</td>
+<td align="left" valign="top" style="border-style: none">
+1
+</td>
+<td align="left" valign="top" style="border-style: none">
+0
+</td>
+<td align="left" valign="top" style="border-style: none">
+0/0
+</td>
+
+</tr>
+
+</table>
+<br /><br /><br /><br />
+</body>
+
+</html>
