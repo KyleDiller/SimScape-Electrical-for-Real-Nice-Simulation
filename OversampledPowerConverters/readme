@@ -1,1 +1,11 @@
+The directory contains an example of oversampled inverter.
 
+What do we mean by oversampling?
+
+Let's say the model runs at 10us and that you drive it in HIL from Counting Digital Inputs (CDI) sampled at 10 ns (so 1000 faster sampling)
+
+These CDI actually counts the number of 10ns tics between gate transitions, providing an average of the Logical 1 time at 10us (the inverter sampling time).
+
+The technique is simple: for 10 us time steps with transitions, the inverter outputs voltage is set to the average voltage for this time step. 
+
+This is well explained in a series of papers from Seimens using dSPACE from 1999. 
