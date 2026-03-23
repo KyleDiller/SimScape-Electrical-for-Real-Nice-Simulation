@@ -1,4 +1,4 @@
-This is a deeper explanation of the FPGA directory.
+This is a deeper explanation of the FPGA directory. See MATE_SOCS/ also for more FPGA adapted models.
 
 These models are designed to be HDL Coder ready. The objective sample time is 1-2 micro-seconds.
 At 1-2 us , Pejovic compensated inverters have excellent accuruacy, both at the AC-side of the inverter and on the DC-side also.
