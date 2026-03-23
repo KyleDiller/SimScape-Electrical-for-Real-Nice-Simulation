@@ -1,1 +1,22 @@
+Contains small MATE-SOCS models.
+
+What is MATE-SOCS (System-On-Chip Solver)?
+
+The objective of MATE-SOCS is to provide an solver for electric converter and motor drives that:
+1- Enable the simulation on FPGA of arbitrary circuit topologies on FPGA
+2- with a unique FPGA bitstream
+3- During simulation, parameters can be changed.
+4- Between simulations, topology can be changed.
+
+I use HDL Coder in my workflow. This product is really wonderful in my opinion.
+
+The objective is to give more useful time to HIL test engineers like you and me and stop building new bitstream each time there is a change in the model.
+
+Start with myFirstCircuit: it's a buck converter  and passes all HDL Coder verification.
+4th : buck converter with transformer
+5th circuit: boost converter and PMSM motor with vector drive. 
+Would need a nice simulator with CPUs for controllers and mechanical and
+FPGA for the motor drive and boost converter.
+The 5th model uses 2 SOCS units.
+
 /designs contains HDL Coder results
