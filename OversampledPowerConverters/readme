@@ -9,3 +9,4 @@ These CDI actually counts the number of 10ns tics between gate transitions, prov
 The technique is simple: for 10 us time steps with transitions, the inverter outputs voltage is set to the average voltage for this time step. 
 
 This is well explained in a series of papers from Seimens using dSPACE from 1999. 
+P. Terwiesch, T. Keller and E. Scheiben, "Rail vehicle control system integration testing using digital hardware-in-the-loop simulation," in IEEE Transactions on Control Systems Technology, vol. 7, no. 3, pp. 352-362, May 1999 
