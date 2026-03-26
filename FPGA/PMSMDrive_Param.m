@@ -1,4 +1,9 @@
-
+% Boost parameter
+Ts=1e-6; nb_sw=2; nb_lc=2;nb_r=1;nb_src=2; nb_out=3; rL=1.2e-3;rC=10000;L=10e-3; C=10e-3; LpejoSw=1e-6;h=Ts;Ts_sim=Ts;T_deadtime=5e-6; MAX_INPUTS=16;
+MAX_OUTPUTS=16;
+MAX_SWITCHES=8;
+MAX_INPUTS=16;
+Gpp=5000;Gip=0.1e6; min_charge=0.1;Lsw=0.1e-6;
 % Control Parameters
 
 %Ts_sim        =100e-9*1e+0/2       ; % Calculation Time [sec]
@@ -12,16 +17,19 @@ Inertia_rate =  0.157               ; % Inertia rate [times]
 
 Power       = 7500                      ; % Rated Power [W]
 Pole        = 6                         ; % Poles
+PairOfPoles = Pole/2;
 Wrpm_100    = 1800                      ; % Based speed [r/min]
 Wrpm_max    = 2700                      ; % MAX speed [r/min]
 Jf          = 124.1060+20.5             ; % Inertia [10-4*kgm2]
-R1_20       = 0.120                     ; % Resistance (Phase) [ohm]
+Rs          = 0.120                     ; % Resistance (Phase) [ohm]
 temp        = 20                        ; % temp. [deg] 
 Irms        = 26.00                     ; % Rated Current [Arms]
 Turn        = 26                        ; % Coil Turns [Turn]
 Ld          = 2.984                      ; % d-Inductance (Phase) [mH]
 Lq          = 4.576                      ; % q-Inductance (Phase) [mH]
 KE          = 97.5988        ; % Inducted Voltage constant [mV(rms)/rpm]
+Mf=0.25366; % magnet flux in Wb
+Salient_Fcut= 1/(5e-4);  % filter frequency for derivative of backemf
 
 
 % Vector Control
@@ -60,7 +68,7 @@ rpm_to_rad  = 1 / 60 * 2 * pi ;
 Pm          = Pole / 2 ;
 Wr_100      = Wrpm_100 * rpm_to_rad ;
 Wr_max      = Wrpm_max * rpm_to_rad ;
-R1          = ( 234.5 + exp_temp ) / ( 234.5 + temp ) * R1_20 ;
+R1          = ( 234.5 + exp_temp ) / ( 234.5 + temp ) * Rs ;
 Ld_100      = Ld / 1000 ;
 inv_Ld_100  = 1 / Ld_100 ;
 Lq_100      = Lq / 1000 ;
