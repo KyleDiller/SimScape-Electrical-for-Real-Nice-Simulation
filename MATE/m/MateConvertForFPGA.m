@@ -1,4 +1,8 @@
-function[MATE_SOC]=MateConvertForFPGA(MATE)
+function[MATE_SOC]=MateConvertForFPGA(MATE,opt)
+
+if nargin==1
+    opt=0;
+end
 % format parameter for FPGA simulation
 
 MAX_INPUTS=16;
@@ -285,6 +289,9 @@ end
 
 % permute Inputs of D
 
+nbPejo=length(order);
+nb_notPejoIn=length(notPejoInputs);
+nb_notPejoOut=length(notPejoOutputs);
 order=[order notPejoInputs];
 outorder=[outorder notPejoOutputs];
 DD=MATE.Ddp{1}(outorder,order);
@@ -296,6 +303,18 @@ DD=[DD; zeros(MAX_INPUTS-a, MAX_INPUTS)];
 MATE_SOC.D=DD;
 MATE_SOC.orderin=order;
 MATE_SOC.orderout=outorder;
+
+if opt==1
+
+    newDD=zeros(16,16);
+    % newDD(1:nbPejo,1:nbPejo)=DD(1:nbPejo,1:nbPejo);
+    % newDD(11:11+nb_notPejoOut-1,:)=DD(nbPejo+1:nbPejo+nb_notPejoOut,:);
+    % newDD(:,11:11+nb_notPejoIn-1,:)=DD(:,nbPejo+1:nbPejo+nb_notPejoIn);
+    newDD([1:nbPejo 11:11+nb_notPejoOut-1],[1:nbPejo 11:11+nb_notPejoIn-1])=DD(1:nbPejo+nb_notPejoOut,1:nbPejo+nb_notPejoIn);
+    MATE_SOC.Dback=DD;
+    MATE_SOC.D=newDD; 
+
+end
 
 
 
