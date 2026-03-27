@@ -14,13 +14,13 @@ MATE_SOC.MATE=MATE;
 
 %find switch pairs
 
-Elements=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation');
-Inverters2L=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Compensated Pejovic 2-level inverter');
-Switches=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation','typ','Switch');
-Inductors=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation','typ','Inductor');
-Capacitors=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation','typ','Capacitor');
-SWF_2Linverters=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Inverter Switching Function (2-level IGBT/Diode) (3-phase)');
-PMSMs=find_system(MATE.model, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Permanent Magnet Synchronous Machine');
+Elements=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation');
+Inverters2L=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Compensated Pejovic 2-level inverter');
+Switches=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation','typ','Switch');
+Inductors=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation','typ','Inductor');
+Capacitors=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','Pejovic Element for FPGA simulation','typ','Capacitor');
+SWF_2Linverters=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Inverter Switching Function (2-level IGBT/Diode) (3-phase)');
+PMSMs=find_system(MATE.model,'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Permanent Magnet Synchronous Machine');
 
 order=[];
 ordertype=[];

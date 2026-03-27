@@ -29,7 +29,7 @@ end
 disp(['Running node analysis on ' modele]);
 
 % at the start comment both MATE source
-mateblk=[find_system(modele, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node')];
+mateblk=[find_system(modele,'MatchFilter', @Simulink.match.activeVariants, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node')];
 matetmp={};
 for i=1:size(mateblk,1)
     try 
@@ -42,14 +42,14 @@ for i=1:size(mateblk,1)
 end
 mateblk_sld=matetmp;   % a patch until we modify all test case with SLD MATE blocks with conty parameter
 
-mateblk_1ph=[find_system(modele, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node','conty', 'Single-Phase')];
+mateblk_1ph=[find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node','conty', 'Single-Phase')];
 
 
 
 MakeMATEInterface([],mateblk_sld,mateblk_1ph,[],[],[],[],[],[],'commentMATE');
 
-blk=find_system(modele, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','ee_lib');
-blk=[blk;find_system(modele, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','fl_lib')]; % base ssc lib block
+blk=find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','ee_lib');
+blk=[blk;find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','fl_lib')]; % base ssc lib block
 
 nb_blk=size(blk,1);
 
