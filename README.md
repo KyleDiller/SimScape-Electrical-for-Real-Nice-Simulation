@@ -49,6 +49,9 @@ OversampledPowerConverters/ Explains how to simulate high-frequency PWM converte
 Machines/: contain many machine types (Synchronous, induction) designed with constant Jacobian (admittance), best for real-time simulation because the SimScape solver do not need to refactorize its equations for these node (assuming that the SimScape solver can optimally order its nodes).
 
 FPGA/: In this folder will be found models suitable for FPGA simulation and HDL Coder. These models contains only Pejovic switches and Switching Function Inverters with full rectification and high impedance mode support.
+NOTE: /FPGA contains model that are expected to convert Simspace Electric models into FPGA. But HDL Coder has many little issues and the produced HDL code is not easy to control. Example: HDL Coder adds some delays between the Simscape Eletrical and pure Simulink parts, so my switch models don't work anymore.
+
+In /MATE_SOCS, this problem is solved by converting the Simscape Electrical models into a state-space model (with only the D matrix non-empty). The model generated this way are more easily controlled and produce the expectd result because  HDL Coder see only a pure Simulink model.
 
 List of models in FPGA/:
 
@@ -76,12 +79,14 @@ List of models in FPGA/:
 Pejovic switches offer the advantage of having a constant admittance in both ON and OFF position. This constant admittance avoid the need for refactorisation of nodal equation (or state-space permutation matrix), something to avoid in FPGA because it is very time costly.
 As I am not expert (yet) on MATLAB HDL coder,nor do I have FPGA boards, I would like to have feedback on the actual implementation of these models.
 
-MATE-SOCS/  Files for reconfigurable System-On-Chip Solver for FPGA implementation in HDL-Coder ready format.
-This solver is a variable-topology, variable parameter solver for FPGA. The advantage of this solver is that the user can change the SimScape topology and element parameter WITHOUT re-generation of a new bitstream. One bitstream to rule them all. There are limitations of course and this the first version.
+MATE-SOCS/  Files for reconfigurable Solver-On-Chip for FPGA implementation in HDL-Coder ready format. Using some /FPGA models like machine and converters, the SoC converts Simscape Electrical model in a state-less state-space format (i.e. D matrix used only) and uses HDL Coder to convert to FPGA-ready code.
+
+Much importantly, the SoC solver is a variable-topology, variable parameter solver for FPGA. The advantage of this solver is that the user can change the SimScape topology and element parameter WITHOUT re-generation of a new bitstream. One bitstream to rule them all. There are limitations of course and this the first version.
 
     -MATE_HDLsolver_myFirstCircuit.slx is a little example with 2-level inverter (energy-compensated), some RLC elements and switched load. One can make parameter and topology modifications on it (in the Simspace reference model). MakeMate2() will then extract parameters and topology to run on the HDL-Coder fixed MATE-SOCS.
+    -MATE_HDLsolver_mySecondCircuit.slx is a buck converter with 2-level inverter (energy-compensated), some RLC elements and switched load. One can make parameter and topology modifications on it (in the Simspace reference model). MakeMate2() will then extract parameters and topology to run on the HDL-Coder fixed MATE-SOCS.
     -MATE_HDLsolver_my4thCircuit.slx: more complex... same as myFirst* but with added transformer and in a Buck converter configuration, which is like NOT firing the lower IGBT of a 2-level inverter.
-    -MATE MATE_HDLsolver_my5thcircuitPMSMdrive.slx: Boost converter and PMSM vector drive using oversampling inverter. Sufficent to HIL test an electric car! All parameters of the boost and PMSM are parametrizable DURING simulation. Avoid depression caused by excessive bitstream generation!
+    -MATE MATE_HDLsolver_my5thcircuitPMSMdrive.slx: Boost converter and PMSM vector drive using oversampling inverter. Sufficent to HIL test an electric car! All parameters of the boost and PMSM are parametrizable DURING simulation. In my last version, I included a table-based variable Ldq PMSM.
 
 Cite as Kyle Diller, SimScape Electrical models for real-time simulation, 2026.
 
