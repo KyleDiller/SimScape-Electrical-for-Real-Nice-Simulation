@@ -1,6 +1,8 @@
 This folder contains the IEEE 13 node test feeder model with a compensated stubline to explain how to properly decouple power system circuits.
+Please read /documentation/NetworkDecouplingWithStubline.pdf for more informations.
+
 The selection of the decoupling and the stubline model are far from improvised like I have seen in some Mathworks demo.
-The stubline is a small Bergeron line with losses that has exactly 1 time step of propagation delay (not 1.126, 1.0000).
+The stubline is a small Bergeron line with losses that has exactly 1 time step of propagation delay.
 It replace a pi-line model and will add some equivalent capacitance to the circuit. 
 We choose the longest lines to use this stubline because the added capacitance will be less then.
 This added capacitance can be compensated at the power frequency with a shunt reactor. Therefore, at 50/60 Hz, reactive power are good.
