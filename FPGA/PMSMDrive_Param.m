@@ -38,7 +38,7 @@ Torque_Lim  = 50           ; % Rate of the Torque Current Limit [%]
 Weak_Lim    = 50          ; % Rate of the Weak Current Limit [%]
 wsc         =  200          ; % Frequency Response of the Speed Controller
 wcc         = 2000          ; % Response Frequency of the Current Controller
-carrier     = 9000          ; % Carrier Frequency
+carrier     = 12000          ; % Carrier Frequency
 wspi        = wsc / 10      ; % Break Frequency of the Speed Controller
 wcpi        = wcc / 10      ; % Break Frequency of the Current Controller
 
