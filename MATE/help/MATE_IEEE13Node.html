@@ -1,0 +1,40 @@
+<!-- $Revision: 1.1 $ -->
+<html>
+<head><title>Demo Help: IEEE 13 node distribution feeder with Compensated Stubline Model </title></head><body>
+<p style="color:#990000; font-weight:bold; font-size:x-large">IEEE 13 node distribution feeder with Compensated Stubline Model </p>
+
+
+<p class="rtecenter"><img src="IEEE13bus.jpg" height="300" width="400"/></p>
+<p style="font-size:small">Fig.1 IEEE 13 node distributon feeder diagram</p>
+
+<p style="color:#990000; font-weight:normal; font-size:large">Summary</p>
+
+<p>This model is used to demonstrate a novel decoupling method, the Compensated Stubline[1], on the IEEE 13 node test feeder model[2].</p>
+<p>In the model, a Compensated Stubline Model (CSL) is inserted in place of the line between nodes 632 and 671 and splits the network equation in two halves.</p>
+<p>The selected line is 2000 ft (0.61 km). The stubline that replaces it has a one time step delay and with the same total inductance, so it could be considered as having an equivalent length of ~7km at 25 us. </p>
+<p>This increase line length typically bring some errors due the increase capacitance of the stubline line (C=Ts^2/L). The Compensated Stubline Model minimize the error of the stubline usage by compensating this reactive power.</p>
+
+<p style="color:#990000; font-weight:normal; font-size:large">Test case</p>
+<p>In this test we compare 3 different simulations:</p>
+
+<p>1- Simscape with nominal pi-line </p>
+<p>2- Simscape with Compensated Stubline Model (CSL)</p>
+<p>3- Simscape with standard stubline (no compensation)</p>
+
+<p>Simulation time step is 25 us.</p>
+<p>A single-phase-to-ground fault is made at bus 671 for the test. The figure compares the 3 results for the main feeder input current (bus 632) and clearly shows that all curves match very well during the fault except for the non-compensated stubline case.</p>
+
+<p class="rtecenter"><img src="IEEE13node_currents.jpg" height="450" width="600"/></p>
+<p style="font-size:small">Fig.2  Input feeder current during the single-phase-to-ground fault</p>
+
+
+<p> </p>
+
+<p style="color:#990000; font-weight:normal; font-size:large">References</p>
+<p> </p>
+[1] B. Ahmed, A. Abdelgadir, N. Saied and A. Karrar, "A Compensated Distributed-Parameter Line Decoupling Approach for Real Time Applications" in IEEE Transactions on Smart Grid, doi: 10.1109/TSG.2020.3033145.</a>
+<p></p>
+[2] "IEEE 13 Node Test Feeder standard document", IEEE Distribution System Analysis Subcommittee
+<p> </p>
+</body>
+</html>
