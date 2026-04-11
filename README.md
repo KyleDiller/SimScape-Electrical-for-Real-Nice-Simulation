@@ -20,6 +20,10 @@ In this repository, we find:
 
 - Some model specifically designed for FPGA and HDL Coder (in /FPGA)
 
+- MATE_SOCS: the Solver-on-Chip is an innovative FPGA solver that is topologically reconfigurable to avoid bitstream generation each time the circuit is modified.
+
+NEW: You can browse my different models easily by using the MATEModelSelector Matlab App! Models can be open, help found (some are missing but I am filling the gaps!)
+
 I don't have a SpeedGoat simulator so if you want to test the model and report the performance, that would be great. It is also possible to port them to other RTDS with some skills.
 
 Folder description:
