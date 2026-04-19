@@ -148,6 +148,18 @@ if isequal(step,'findMATEtype')
         else
             MATEtype='V';
         end
+        %manual override April 14, 2026
+        typm=get_param(mateblk{m,1},'it');
+        if isequal(typm,'auto')
+        elseif isequal(typm,'Thevenin')
+            MATEtype='V';
+        elseif isequal(typm,'Norton')
+            MATEtype='I';
+        else
+            error('Bad MATE interface type')
+        end
+
+
         mateblk{m,3}=MATEtype;
         if MATEtype=='V'
             set_param([mateblk{m,1} '/MATE_V'],'Commented','off');

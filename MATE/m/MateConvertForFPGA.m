@@ -311,7 +311,7 @@ if opt==1
     % newDD(11:11+nb_notPejoOut-1,:)=DD(nbPejo+1:nbPejo+nb_notPejoOut,:);
     % newDD(:,11:11+nb_notPejoIn-1,:)=DD(:,nbPejo+1:nbPejo+nb_notPejoIn);
     newDD([1:nbPejo 11:11+nb_notPejoOut-1],[1:nbPejo 11:11+nb_notPejoIn-1])=DD(1:nbPejo+nb_notPejoOut,1:nbPejo+nb_notPejoIn);
-    MATE_SOC.Dback=DD;
+    MATE_SOC.Dpack=DD;
     MATE_SOC.D=newDD; 
 
 end

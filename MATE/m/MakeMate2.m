@@ -1,24 +1,33 @@
-function [MATE, MATERT,blk]= MakeMate2(modele, disc)
+function [MATE, MATERT,blk]= MakeMate2(modele, disc, Ts)
 
 %Ts=25e-6;
 SILENT=0;  % 0 = less printf()
 opt=0;
+model_top=get_param(modele,'Parent');
 
 if nargin==1
     disc=1;  % default backward euler
+    if isempty(model_top)
+        Ts=evalin('base', get_param(bdroot,'FixedStep'));
+    else
+        Ts=evalin('base', get_param(model_top,'FixedStep'));
+    end
+end
+if nargin==2
+    if isempty(model_top)
+        Ts=evalin('base', get_param(bdroot,'FixedStep'));
+    else
+        Ts=evalin('base', get_param(model_top,'FixedStep'));
+    end
 end
 
 % 23 juillet  works on RTScape_netlist23juillet.slx
 %zip('backup.zip', {'*.m', '*.mat'});
 
 
-model_top=get_param(modele,'Parent');
 
-if isempty(model_top)
-    Ts=evalin('base', get_param(bdroot,'FixedStep'));
-else
-    Ts=evalin('base', get_param(model_top,'FixedStep'));
-end
+
+
 
 %% DISCRETISE
 if 1==0
@@ -27,9 +36,12 @@ end
 
 %modele=bdroot;
 disp(['Running node analysis on ' modele]);
-
+warning('off','Simulink:Commands:FindSystemDefaultVariantsOptionWithVariantModel')
+warning('off','Simulink:Commands:FindSystemAllVariantsRemoval')
+warning('off','Simulink:Commands:FindSystemVariantsOptionRemoval')
 % at the start comment both MATE source
-mateblk=[find_system(modele,'MatchFilter', @Simulink.match.activeVariants, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node')];
+mateblk=[find_system(modele,'MatchFilter', @Simulink.match.activeVariants, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node (3-phase)')];
+% mateblk=[find_system(modele, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node')];
 matetmp={};
 for i=1:size(mateblk,1)
     try 
@@ -42,14 +54,17 @@ for i=1:size(mateblk,1)
 end
 mateblk_sld=matetmp;   % a patch until we modify all test case with SLD MATE blocks with conty parameter
 
-mateblk_1ph=[find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node','conty', 'Single-Phase')];
+%mateblk_1ph=[find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node','conty', 'Single-Phase')];
+mateblk_1ph=[find_system(modele, 'FollowLinks', 'on','LookUnderMasks','all','MaskType','MATE Node (1ph)','conty', 'Single-Phase')];
 
 
 
 MakeMATEInterface([],mateblk_sld,mateblk_1ph,[],[],[],[],[],[],'commentMATE');
 
-blk=find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','ee_lib');
-blk=[blk;find_system(modele, 'MatchFilter', @Simulink.match.activeVariants,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','fl_lib')]; % base ssc lib block
+%blk=find_system(modele, 'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','ee_lib');
+%blk=[blk;find_system(modele, 'MatchFilter', @Simulink.match.activeVariants, 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','fl_lib')]; % base ssc lib block
+blk=find_system(modele, 'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','ee_lib');
+blk=[blk;find_system(modele,'regexp', 'on', 'FollowLinks', 'on','LookUnderMasks','all','ReferenceBlock','fl_lib')]; % base ssc lib block
 
 nb_blk=size(blk,1);
 
@@ -71,11 +86,11 @@ blkmask={
 'Electrical Reference',[1],[1,0],-1,{'LConn1'} ; 
  ['Grounded Neutral' 10 '(Three-Phase)'],[1 0],[1,0],-1,{'TBD'};
 'Resistor',[1 2],[1 1],-1,{'LConn1', 'RConn1'};                              % block type, electric ports indice for LConn and RConn in this order
-'Inductor',[1 2],[1 1],-1,{'TBD'};                              % followed by [number of LConn, number of RConn]
-'Capacitor',[1 2],[1 1],-1,{'TBD'};                             % followed by modeling option if any (-1 if none)
+'Inductor',[1 2],[1 1],-1,{'LConn1', 'RConn1'};                              % followed by [number of LConn, number of RConn]
+'Capacitor',[1 2],[1 1],-1,{'LConn1', 'RConn1'};                             % followed by modeling option if any (-1 if none)
 %'RLC (Three-Phase)',[1 2 3 4 5 6],[3 3],'ee.passive.rlc_assemblies.rlc.Xabc'; % ABC ports  % modelingOption = get_param(gcbh, 'ComponentPath') 'ee.passive.rlc_assemblies.rlc.abc' get_param(gcb, 'port_option'):'ee.enum.threePhasePort.expanded'
 'RLC (Three-Phase)',[1 2 3 4 5 6],[3 3],'ee.enum.threePhasePort.expanded',{'TBD'}; % ABC ports  % modelingOption = get_param(gcbh, 'ComponentPath') 'ee.passive.rlc_assemblies.rlc.abc' get_param(gcb, 'port_option'):'ee.enum.threePhasePort.expanded'
-'RLC (Three-Phase)',[1 2],[1 1],        'ee.passive.rlc_assemblies.rlc.abc',{'TBD'};  % sld ports 
+'RLC (Three-Phase)',[1 2],[1 1],        'ee.passive.rlc_assemblies.rlc.abc',{'LConn1', 'RConn1'};  % sld ports 
 'AC Current Source',[1 2],[1 1],-1,{'TBD'};
 'AC Voltage Source',[1 2],[1 1],-1,{'TBD'};
 'DC Voltage Source',[1 2],[1 1],-1,{'TBD'};   %10
@@ -88,7 +103,7 @@ blkmask={
  ['Current' 10 'Source' 10 '(Three-Phase)'],[1 2],[1 1],'ee.sources.current.abc',{'TBD'};  %SLD
  ['Coupled Lines' 10 '(Three-Phase)'],[1 2 3 4 5 6],[3 3], 'ee.passive.lines.coupled_lines.Xabc',{'TBD'};  % mutual inductance
  ['Nonlinear' 10 'Transformer'],[1 2 3 4],[2 2], -1,{'TBD'};   %#19 linear xfo   %21 aout : switch position with mutual inductance
- 'Switch',[1 3],[1 1],-1,{'TBD'};  %20
+ 'Switch',[1 3],[1 1],-1,{'LConn1', 'RConn2'};  %20
  'Voltage Source',[1 2],[1 1],-1,{'LConn1','RConn1'};
  'Current Source',[1 2],[1 1],-1,{'TBD'};
   ['Circuit Breaker' 10 '(Three-Phase)'],[2 3],[1 1],'ee.switches.circuit_breaker.ps.abc',{'TBD'}; %23
@@ -436,6 +451,10 @@ NodeNumber=max(nets)+1;
         % end
         if 1==1
             disp('MATE-SoCS data generated with success') 
+            try
+                MakeMATEInterface([],mateblk_sld,mateblk_1ph,[],[],[],[],[],[],'commentMATE');
+            catch
+            end
         else
         disp('Routing Simulink switch signal in place of Simscape ones ') 
         try
