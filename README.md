@@ -96,3 +96,5 @@ Cite as Kyle Diller, SimScape Electrical models for real-time simulation, 2026.
 
 For comments and positive suggestions, please contact me at KyleDiller@proton.me
 
+Like m work! Buy me a coffee in bitcoin at: bc1q27u4dju03df77jcjfjefpq8wtv4ejtncpnw7cz
+
